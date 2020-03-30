@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: SampleCNWeather
+
+mvf4ms:
+  version: 2.1.0
+
+server:
+  port: 8080
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://{REGISTRY_IP}:{REGISTRY_PORT}/eureka
