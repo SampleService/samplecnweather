@@ -1,5 +1,6 @@
 package com.septemberhx.cnweather.controller;
 
+import com.septemberhx.cnweather.utils.MBaseUtils;
 import com.septemberhx.common.bean.MResponse;
 import com.septemberhx.mclient.annotation.MFuncDescription;
 import org.springframework.stereotype.Controller;
@@ -20,6 +21,6 @@ public class WeatherController {
     @ResponseBody
     @MFuncDescription(value = "weather", level = 2)
     public MResponse weather(HttpServletRequest request) {
-        return MResponse.successResponse();
+        return MBaseUtils.generateResInKBSize(20);
     }
 }
