@@ -19,8 +19,8 @@ public class WeatherController {
 
     @PostMapping(path = "/weather")
     @ResponseBody
-    @MFuncDescription(value = "weather", level = 3)
+    @MFuncDescription(value = "weather", level = 2)
     public MResponse weather(HttpServletRequest request) {
-        return MBaseUtils.generateResInKBSize(15);
+        return MBaseUtils.generateResInKBSize(20);
     }
 }
